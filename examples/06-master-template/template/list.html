@@ -1,0 +1,18 @@
+{{define "body"}}
+<h1>Posts</h1>
+<table class="table table-bordered">
+    <tr class="someclass">
+        <th>ID</th>
+        <th>Title</th>
+        <th>Action</th>
+    </tr>
+
+    {{ range  $key, $value := .}}
+    <tr id="someid">
+        <td>{{ $value.Id }}</td>
+        <td>{{ $value.Title }}</td>
+        <td>View Post</td>
+    </tr>
+    {{ end }}
+</table>
+{{end}}

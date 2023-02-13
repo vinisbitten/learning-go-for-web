@@ -1,0 +1,13 @@
+{{define "body"}}
+<h1>Post {{.id}} </h1>
+<table class="table table-bordered">
+    <tr>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr>
+        <td> {{ .Title }} </td>
+        <td> {{.Body}} </td>
+    </tr>
+</table>
+{{end}}

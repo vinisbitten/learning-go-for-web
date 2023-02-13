@@ -1,0 +1,9 @@
+go 1.19
+
+use (
+	./examples/01-hello-world
+	./examples/02-templates
+	./examples/03-databases
+	./examples/04-mux-router
+	./examples/05-static
+)
